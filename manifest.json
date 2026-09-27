@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Medical Society Explorer AI",
+  "version": "1.0.0",
+  "description": "Investiga sociedades médicas y directorios de cirujanos utilizando IA.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "src/background/serviceWorker.ts",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Abrir Explorer AI"
+  }
+}

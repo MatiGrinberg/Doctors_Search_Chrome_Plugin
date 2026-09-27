@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white bg-opacity-70 backdrop-blur-md border border-white border-opacity-40 shadow-lg rounded-xl;
+  }
+}
